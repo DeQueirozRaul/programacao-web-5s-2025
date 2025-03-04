@@ -1,8 +1,10 @@
 var numA = 10;
 var numB = 5;
 var resultadoAdicao = numA + numB;
-console.log(`Resultado da adição entre ${numA} e ${numB} é ${numA + numB}`);
-console.log(`Resultado da subtração entre ${numA} e ${numB} é ${numA - numB}`);
+console.log(`Resultado da adição entre ${numA} e ${numB} é ${resultadoAdicao}`);
+
+var resultadoSubtracao = numA - numB;
+console.log(`Resultado da subtração entre ${numA} e ${numB} é ${resultadoSubtracao}`);
 
 var resultadoMultiplicacao = numA * numB;
 console.log(`Resultado da multiplicação entre ${numA} e ${numB} é ${resultadoMultiplicacao}`);
