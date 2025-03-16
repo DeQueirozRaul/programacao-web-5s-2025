@@ -1,4 +1,4 @@
-//Funcão
+//Cria a Funcão 
 function transporMatriz(A) {
     // Imprimir a matriz original
     console.log("Matriz Original:");
@@ -24,7 +24,7 @@ function transporMatriz(A) {
       console.log(At[j]);
     }
   }
-  
+
   // Matriz
   const matriz = [
     [1, 2,],
