@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento de Consulta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Agendamento de Consulta</h1>
+        <form id="agendamentoForm">
+            <div class="form-section">
+                <h2>Dados do Paciente</h2>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" required>
+                </div>
+                <div class="form-group">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" required pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                </div>
+                <div class="form-group">
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(00) 00000-0000">
+                </div>
+                <div class="form-group">
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" required placeholder="00000-000">
+                </div>
+                <div class="form-group">
+                    <label for="endereco">Endereço:</label>
+                    <input type="text" id="endereco" name="endereco" required>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Dados da Consulta</h2>
+                <div class="form-group">
+                    <label for="clinica">Clínica:</label>
+                    <select id="clinica" name="clinica" required>
+                        <option value="">Selecione uma clínica</option>
+                        <option value="clinica1">Clínica Médica Central</option>
+                        <option value="clinica2">Clínica Saúde Total</option>
+                        <option value="clinica3">Clínica Bem Estar</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="especialidade">Especialidade:</label>
+                    <select id="especialidade" name="especialidade" required>
+                        <option value="">Selecione uma especialidade</option>
+                        <option value="cardiologia">Cardiologia</option>
+                        <option value="dermatologia">Dermatologia</option>
+                        <option value="pediatria">Pediatria</option>
+                        <option value="ortopedia">Ortopedia</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="observacao">Observação:</label>
+                    <textarea id="observacao" name="observacao" rows="4"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="dataHora">Data e Hora do Agendamento:</label>
+                    <input type="datetime-local" id="dataHora" name="dataHora" required>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn">Agendar Consulta</button>
+        </form>
+        <div id="mensagem"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
